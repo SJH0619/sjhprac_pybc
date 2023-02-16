@@ -10,16 +10,16 @@ async def main():
     await blockchain.create_genesis_block()
 
     print("트랜잭션 A to B 1")
-    blockchain.create_transaction(Transaction(sender="A", reciver="B", amount=1));
+    blockchain.create_transaction(Transaction(sender="A", receiver="B", amount=1));
     print("트랜잭션 B to C 1")
-    blockchain.create_transaction(Transaction(sender="B", reciver="C", amount=1));
+    blockchain.create_transaction(Transaction(sender="B", receiver="C", amount=1));
 
     await blockchain.mine_pending_transaction()
 
     print("트랜잭션 C to D 1")
-    blockchain.create_transaction(Transaction(sender="C", reciver="D", amount=1));
+    blockchain.create_transaction(Transaction(sender="C", receiver="D", amount=1));
     print("트랜잭션 D to E 1")
-    blockchain.create_transaction(Transaction(sender="D", reciver="E", amount=1));
+    blockchain.create_transaction(Transaction(sender="D", receiver="E", amount=1));
 
     await blockchain.mine_pending_transaction()
 

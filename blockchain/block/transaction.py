@@ -1,8 +1,8 @@
 class Transaction:
-    def __init__(self, sender, reciver, amount):
+    def __init__(self, sender, receiver, amount):
         self.sender = sender
-        self.reciver = reciver
+        self.receiver = receiver
         self.amount = amount
 
     def __str__(self):
-        return self.sender + " to " + self.reciver + " " + str(self.amount)
+        return self.sender + " to " + self.receiver + " " + str(self.amount)
